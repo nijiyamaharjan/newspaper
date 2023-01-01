@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 
 from pathlib import Path
 from environs import Env 
+import dj_database_url
 
 env = Env() # new
 env.read_env() # new
@@ -154,3 +155,7 @@ EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 
 TIME_ZONE = "Asia/Kathmandu"
+
+
+db_from_env = dj_database_url.config(conn_max_age=500)
+DATABASES['default'].update(db_from_env)
