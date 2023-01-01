@@ -53,6 +53,7 @@ INSTALLED_APPS = [
     'accounts.apps.AccountsConfig',
     'pages.apps.PagesConfig',
     'articles.apps.ArticlesConfig',
+    'django_project'
 ]
 
 MIDDLEWARE = [
