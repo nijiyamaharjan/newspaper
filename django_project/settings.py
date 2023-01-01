@@ -33,7 +33,7 @@ DEBUG = env.bool("DEBUG", default=False)
 
 ALLOWED_HOSTS = ["*"]
 
-CSRF__TRUSTED_ORIGINS = ['https://web-production-72f5.up.railway.app/']
+CSRF__TRUSTED_ORIGINS = ['*']
 
 
 # Application definition
